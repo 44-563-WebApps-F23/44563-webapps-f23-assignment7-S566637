@@ -50,7 +50,7 @@
 
 </head>
 <body>
-    <h2>Find the treasure by Santhosh Reddy Gurram</h2>
+    <h2>Find the treasure by Malaya Suagndhini</h2>
     <p class="Pirate">Click on the locations to search for treasure, beware the traps</p>
     <p id="locations">Number of locations checked is zero</p>
     <p id="penalty">Penalty is zero</p>
@@ -128,17 +128,17 @@
 
         let imageSrc = "";
         if (position === treasureLocation) {
-            imageSrc = "FirstImage.jpg";
+            imageSrc = "treasure-chest.jpg";
             gameOver = true;
             penalty -= 3;
             checkCount++;
         } else if (position === trapLocation) {
-            imageSrc = "ThirdImage.jpg";
+            imageSrc = "trap.jpg";
             gameOver = true;
             penalty += 4;
             checkCount++;
         } else {
-            imageSrc = "FourthImage.jpg";
+            imageSrc = "pirate.jpg";
             checkCount++;
             penalty++;
         }
